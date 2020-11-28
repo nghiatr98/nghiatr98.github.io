@@ -1,0 +1,21 @@
+h1 {
+  color: blue;
+  background-color: palevioletred;
+  font-size: 50px;
+}
+.logo {
+  text-align: center;
+}
+.logo img {
+  height: 80px;
+  border-radius: 50%;
+  padding-top: 5px;
+}
+ul {
+  list-style-type: decimal-leading-zero;
+  line-height: 50px;
+}
+h2{
+  font-style: italic;
+  color: red;
+}
