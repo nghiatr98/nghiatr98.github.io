@@ -1,0 +1,15 @@
+.a{
+    color: green;
+    font-size: 20px ;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 2;
+    text-transform: capitalize;
+}
+
+ul, ol {
+    list-style-type: circle;
+}
+a{
+    text-decoration: none;
+}
