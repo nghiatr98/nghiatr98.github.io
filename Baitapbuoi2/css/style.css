@@ -1,3 +1,9 @@
+main {
+  background-color: grey;
+}
+body {
+  background-color: grey;
+}
 ul {
   background-color: black;
   text-align: left;
@@ -7,8 +13,9 @@ ul {
 }
 ul li {
   display: inline-block;
-  float: left;
   border-right: 1px solid #bbbbbb;
+  border-top: 1px solid #bbbbbb;
+  border-left: 1px solid #bbbbbb;
 }
 li:last-child {
   border-right: none;
@@ -19,15 +26,64 @@ ul li a {
   text-decoration: none;
   display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 62px;
 }
 .khaivi > div {
   display: inline-block;
-  float: left;
   display: flex;
   flex-direction: row;
   display: grid;
-  grid-row: 50px;
-  grid-template-columns: auto auto auto;
+  grid-row: 20px;
+  grid-template-columns: 180px 180px 180px;
 }
-
+.nom > div {
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  display: grid;
+  grid-row: 20px;
+  grid-template-columns: 180px 180px 180px;
+}
+.man > div {
+  display: inline-block;
+  display:flex;
+  display:grid;
+  flex-direction: row;
+  grid-row: 20px;
+  grid-template-columns: 180px 180px 180px;
+}
+.nuoc > div {
+  display: inline-block;
+  display: flex;
+  display: grid;
+  flex-direction: row;
+  grid-row: 20px;
+  grid-template-columns: 180px 180px 180px;
+}
+.logo {
+  background-color: black;
+}
+footer {
+  background-image: url(../image/set-logo.png);
+  display: inline-block;
+  display: flex;
+  display: grid;
+  flex-direction: row;
+  grid-row: 20px;
+  grid-template-columns: auto auto auto auto;
+}
+footer > div {
+  font-size: 20px;
+  color: whitesmoke;
+}
+h2 ~ div p {
+  font-style: italic;
+}
+h1 ~ div img {
+  width: 310px;
+  height: 450px;
+}
+h3 ~ div img {
+  width: 500px;
+  height: 300px;
+}
