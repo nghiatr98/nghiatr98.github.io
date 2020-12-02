@@ -1,0 +1,20 @@
+div {
+    width: 300px;
+    height: 150px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    border-bottom: 18px solid gray;
+    border-top: 20px solid palevioletred;
+    border-left: 5px solid brown;
+    border-right: 15px solid greenyellow;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+div img {
+    border-radius: 50%;
+    
+}
