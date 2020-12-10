@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: burlywood;
+}
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wrap {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.title {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.menu-item, .sub-item {
+    display: inline-block;
+    position: relative;
+}
+.menu-link , .sub-link {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.menu-item {
+    margin: 10px;
+}
+.sub-link {
+    width: 100px;
+    box-shadow: 0 0 2px rgb(59, 59, 59);
+    padding: 4px;
+}
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    display: none;
+}
+.menu-item:hover .dropdown {
+    display: block;
+}
+.sub-link {
+    color: aquamarine;
+}
+.img-head {
+    margin-left: -25px;
+}
+.img-text {
+    position: absolute;
+    top:62%;
+    left:30%;
+    box-shadow: 0 0 2px gray;
+    font-size: 30px;
+    color: whitesmoke;
+    padding: 11px 20px;
+    margin: 10px 20px;
+    background-color: black;
+    opacity: 0.5;
+}
+footer {
+    background-image: url(https://celebrityaccess.com/wp-content/uploads/2020/06/photo-1514483127413-f72f273478c3.jpg);
+    margin-left: -8px;
+    margin-right: -8px;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 10px;
+}
+.foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+b {
+    border-bottom: 2px solid orange;
+}
+.foot-info {
+    list-style-type: none;
+    padding: 0;
+}
+.foot-info-item {
+    display:block;
+    text-decoration: none;
+    border-top: 2px dashed yellowgreen;
+    color: whitesmoke;
+}
+.img1 img {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+.wrap-main-1 {
+    width: 250px;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+}
+.wrap-item-1 {
+    width: 220px;
+    height:auto;
+    padding: 10px;
+    margin: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+}
+.wrap-main-2 {
+    width: 850px;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+}
+.wrap-item-2 {
+    width: 800px;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+.wrap-item-text {
+    display: block;
+    text-decoration: none;
+    border-top: 1px dashed black;
+}
+.wrap-item-1-text {
+    list-style-type: none;
+    padding: 0;
+}
+.mainn {
+    display: flex;
+    justify-content: space-between;
+}
+.img-me {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+.page-menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.page-item {
+    display:block;
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+}
