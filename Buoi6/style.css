@@ -1,0 +1,144 @@
+/*.container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.container1 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.container2 {
+    display: flex;
+    flex-direction: row;
+}
+.container3 {
+    display: flex;
+    flex-direction: column;
+}*/
+
+
+/*.container {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container1 {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+.item {
+    width: 230px;
+}*/
+
+
+/*.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.container3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container5 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.item {
+    width: 50px;
+}*/
+
+
+/*.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.container1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+.container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+.container3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+.container4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.item {
+    width: 50px;
+    background-color: red;
+    margin: 0 2px;
+}
+span {
+    height: 30px;
+    font-size: 30px;
+}*/
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 200px;
+    background-color: blue;
+}
+.item {
+    width: 100px;
+    /*flex-basis:100px;*/
+    background-color: red;
+    margin: 0 2px;
+}
+.item:nth-child(2) {
+    order: 1;
+    /*flex-grow: 3;*/
+    /*flex-shrink: 0;*/
+    align-self: center;
+}
