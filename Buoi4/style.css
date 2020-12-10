@@ -1,0 +1,146 @@
+/*.button {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: greenyellow;
+}*/
+
+
+
+/*.button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: palegreen;
+}*/
+
+
+
+
+/*.button {
+    position: absolute;
+    bottom: 100px;
+    right: 30px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: greenyellow;
+}*/
+
+
+
+/*div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+.test1 {
+    position: relative;
+    top: 0;
+    left: 210px;
+}
+.test2 {
+    position: relative;
+    top: 0;
+    right: 100px;
+}
+.test3 {
+    position: relative;
+    top: 100px;
+    right: 100px;
+}*/
+
+
+
+/*.re {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: red;
+}
+.ab {
+    position: absolute;
+    bottom: 160px;
+    right: 130px;
+    width: 150px;
+    height: 100px;
+    background-color: green;
+}*/
+
+
+/*.a, .b, .c {
+    height: 2000px;
+}
+.a {
+    background-color: aqua;
+}
+.b {
+    background-color: salmon;
+}
+.c {
+    background-color: teal;
+}
+.bcon {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: khaki;
+}*/
+
+
+/*z-index đặt số cao hơn thì hiển thị trên relative*/
+* {
+    box-sizing: border-box;
+}
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+.menu-item {
+    position: relative;
+    display: inline-block;
+    margin-right: 15px;
+}
+.menu-item:hover .dropdown {
+    opacity: 1;
+}
+.menu-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 5px 0;
+}
+.dropdown {
+    opacity: 0;
+    width: 800px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    background-color: #190032;
+    border-radius: 10px;
+    transition: opacity 1s;
+}
+.sub-menu {
+    display: inline-block;
+    list-style-type: none;
+    width: calc(25% - 4px);
+    padding: 0;
+}
+.sub-link {
+    display: block;
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 5px;
+}
