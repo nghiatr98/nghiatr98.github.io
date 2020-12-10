@@ -1,0 +1,19 @@
+table {
+    border: 2px solid green;
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+th, td {
+    border: 1px solid red;
+    width: 120px;
+    height: 50px;
+}
+tr:nth-child(even) {
+    background-color: brown;
+}
+tr:nth-child(odd){
+    background-color: palevioletred;
+}
+tr:nth-child(2n+3){
+    background-color: aqua;
+}
