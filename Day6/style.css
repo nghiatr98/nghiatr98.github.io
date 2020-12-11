@@ -48,8 +48,10 @@ body {
 }
 .sub-link {
     width: 100px;
-    box-shadow: 0 0 2px rgb(59, 59, 59);
+    box-shadow: 0 0 1px rgb(59, 59, 59);
     padding: 4px;
+    color: aquamarine;
+    background-color: black;
 }
 .dropdown {
     position: absolute;
@@ -60,9 +62,6 @@ body {
 }
 .menu-item:hover .dropdown {
     display: block;
-}
-.sub-link {
-    color: aquamarine;
 }
 .img-head {
     margin-left: -25px;
@@ -125,6 +124,15 @@ b {
     text-align: center;
     font-size: 20px;
 }
+.wrap-item-1-2 {
+    width: 220px;
+    height:auto;
+    padding: 10px;
+    margin: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+}
 .wrap-main-2 {
     width: 850px;
     height: auto;
@@ -143,6 +151,12 @@ b {
     display: block;
     text-decoration: none;
     border-top: 1px dashed black;
+    color: black;
+}
+.wrap-item-text-1 {
+    display: block;
+    text-decoration: none;
+    color: black;
 }
 .wrap-item-1-text {
     list-style-type: none;
@@ -169,4 +183,28 @@ b {
     text-decoration: none;
     margin: 10px;
     color: black;
+}
+.wrap-item-text:hover {
+    box-shadow: 0 0 1px grey;
+}
+.wrap-item-2:hover {
+    box-shadow: 0 0 10px grey;
+}
+.sub-link:hover {
+    box-shadow: 0 0 10px rgb(59, 59, 59);
+}
+.bangdiep {
+    font-size: 18px;
+}
+.wrap-item-text-1:hover {
+    box-shadow: 0 0 1px grey;
+}
+.img-fix {
+    margin-left: -10px;
+}
+.audio {
+    background-image: url(https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/00/a0000997/img/basic/a0000997_main.jpg?20180320193934&q=80&rw=750&rh=536);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
 }
