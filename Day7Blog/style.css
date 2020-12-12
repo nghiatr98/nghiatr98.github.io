@@ -1,0 +1,279 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+ul, ol {
+    list-style-type: none;
+    padding: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+
+/* class chung */
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.row {
+    display: flex;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.wrap {
+   flex-wrap: wrap;
+}
+.align-center {
+    align-items: center;
+}
+.align-start {
+    align-items: flex-start;
+}
+.align-end {
+    align-items: flex-end;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-start {
+    justify-content: flex-start;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.col-1 {
+    width: 4,17%;
+}
+.col-2 {
+    width: 8.33%;
+}
+.col-3 {
+    width: 12.5%;
+}
+.col-4 {
+    width: 16.67%;
+}
+.col-5 {
+    width: 20.8%;
+}
+.col-6 {
+    width: 25%;
+}
+.col-7 {
+    width: 29.17%;
+}
+.col-8 {
+    width: 33.33%;
+}
+.col-9 {
+    width: 37.5%;
+}
+.col-10 {
+    width: 41.7%;
+}
+.col-11 {
+    width: 45.9%;
+}
+.col-12 {
+    width: 50%;
+}
+.col-13 {
+    width: 54.17%;
+}
+.col-14{ 
+    width: 58.33%;
+}
+.col-15 {
+    width: 62.5%;
+}
+.col-16 {
+    width: 66.67%;
+}
+.col-17 {
+    width: 70.8%;
+}
+.col-18 {
+    width: 75%;
+}
+.col-19 {
+    width: 79.17%;
+}
+.col-20 {
+    width: 83.33%;
+}
+.col-21 {
+    width: 87.6%;
+}
+.col-22 {
+    width: 91.7%;
+}
+.col-23 {
+    width: 95.9%;
+}
+.col-24 {
+    width: 100%;
+}
+[class*="col-"] {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.text-center {
+    text-align: center;
+}
+.box-shadow:hover {
+    box-shadow: 0 0 5px palevioletred;
+}
+/* class chi tiết */
+.social-item-link img {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+.header .container {
+    padding: 5rem 0;
+}
+.header {
+    margin-bottom: 2rem;
+    background-image: url(https://i.pinimg.com/originals/0f/9f/7b/0f9f7be1473aab092262bda8f9430b16.jpg);
+    background-size: cover;
+}
+.header-heading {
+    color: whitesmoke;
+}
+.header-content {
+    opacity: 0.8;
+}
+body {
+    background-image: url(https://i.makeagif.com/media/2-11-2020/37FJx8.gif);
+}
+.list-item {
+    background-color: rgb(243, 245, 199) ;
+    margin-bottom: 2.5rem;
+}
+.post-header {
+    padding: 2rem;
+}
+
+.post-title {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: blue;
+}
+.post-date {
+    font-size: 1.3rem;
+}
+.post-img img {
+    width: 100%;
+}
+.post-img-2 {
+    padding: 1rem;
+}
+.post-img-item {
+    padding: 1rem;
+}
+.post-desc {
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+.post-audio {
+    text-align: center;
+    background-image: url(https://1.bp.blogspot.com/--8VPd_e3Dns/WazvovJyhRI/AAAAAAAAMXg/2A4mkNatPp83AckkkpU2Ks9wgPVzOrtugCEwYBhgL/s1600/img-4626816059.giff);
+    padding: 10px;
+    margin: 10px;
+    background-size: cover;
+}
+.menu-item {
+    position: relative;
+}
+.menu-item-link {
+    color: whitesmoke;
+    padding: 1rem;
+}
+.menu-logo {
+    color: whitesmoke;
+}
+.sub-item {
+    display: inline-block;
+    position: relative;
+}
+.sub-link {
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    width: 10rem;
+    padding: 0.2rem;
+    box-shadow: 0 0 2px rgb(59, 59, 59);
+}
+.dropdown {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    height: 100%;
+    display: none;
+}
+.menu-item:hover .dropdown{
+    display: block;
+}
+.author {
+    background-color: rgb(243, 245, 199);
+    padding: 1rem;
+    position: sticky;
+    top: 2rem;
+}
+.author-img {
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+.date {
+    background-color: rgb(243, 245, 199);
+    position: sticky;
+    padding: 1rem;
+    top: 2rem;
+}
+.date-link {
+    border-bottom: 2px dashed black;
+    text-decoration: none;
+    padding: 0.3rem;
+}
+.footer {
+    background-image: url(https://i.pinimg.com/originals/0f/9f/7b/0f9f7be1473aab092262bda8f9430b16.jpg);
+    background-position: bottom;
+    background-size: cover;
+    padding: 5rem;
+    color: whitesmoke;
+}
+.foot-link {
+    border-bottom: 2px dashed black;
+}
