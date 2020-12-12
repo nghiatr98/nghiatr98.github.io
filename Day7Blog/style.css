@@ -210,6 +210,9 @@ body {
     margin: 10px;
     background-size: cover;
 }
+.video {
+    max-width: 100%;
+}
 .menu-item {
     position: relative;
 }
@@ -276,4 +279,11 @@ body {
 }
 .foot-link {
     border-bottom: 2px dashed black;
+}
+.page {
+    color: whitesmoke;
+}
+.page-item {
+    padding: 0.4rem;
+    font-size: 2rem;
 }
