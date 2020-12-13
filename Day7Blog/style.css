@@ -69,6 +69,9 @@ img {
 .justify-between {
     justify-content: space-between;
 }
+.justify-around {
+    justify-content: space-around;
+}
 .col-1 {
     width: 4,17%;
 }
@@ -222,6 +225,7 @@ body {
 }
 .menu-logo {
     color: whitesmoke;
+    
 }
 .sub-item {
     display: inline-block;
@@ -249,7 +253,7 @@ body {
     background-color: rgb(243, 245, 199);
     padding: 1rem;
     position: sticky;
-    top: 2rem;
+    top: 1rem;
 }
 .author-img {
     width: 100px;
@@ -263,7 +267,7 @@ body {
     background-color: rgb(243, 245, 199);
     position: sticky;
     padding: 1rem;
-    top: 2rem;
+    top: 1rem;
 }
 .date-link {
     border-bottom: 2px dashed black;
