@@ -183,6 +183,26 @@ else {
 */
 
 /*
+function ucln() {
+  let a = +prompt("Nhập số thứ 1");
+  let b = +prompt("Nhập số thứ 2");
+  let c;
+  let d;
+  for (let i = 1; i <= a && i <= b; i++) {
+    // lặp từ 1 đến số thứ 1 và số thứ 2
+    if (a % i == 0 && b % i == 0) { //ucln
+      c = i;
+    }
+    d = (a * b) / c; // bcnn
+  }
+  console.log(`"Uoc chung lon nhat: " ${c}`);
+  console.log(`"Boi chung nho nhat: " ${d}`);
+}
+ucln()
+*/
+
+/*
+//copy dzo de hoc xong return xem lai :v 
 function uocChungLonNhat(a, b) {
     if (a == 0) {
     return b;
