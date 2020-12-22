@@ -259,9 +259,7 @@ let find = (number) => {
     for (let i = 0; i <= number; i++) {
         if (sum <= number) {
             sum += i;
-            n = i;
-        } else {
-            return n - 1;
+            n = i - 1;
         }
     }
     return n;
