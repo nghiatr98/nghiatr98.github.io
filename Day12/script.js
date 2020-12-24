@@ -125,6 +125,6 @@ function Boy(name, age) {
         console.log("Hello, daughter in law, my name is " + this.name)
     }
 }
-let tokuda = new Boy("Tokuda", 17);
+let tokuda = new Boy("Tokuda", 60);
 console.log(tokuda);
 tokuda.talk();
