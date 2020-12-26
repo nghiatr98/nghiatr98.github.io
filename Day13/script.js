@@ -98,3 +98,35 @@ function countStr(str1,str2) {
 countStr("abcafa","a");
 
 //cat chuoi theo só tu chi dinh 
+function Splits(str,num){
+    let res = "";
+        symbol = /,/gi;
+    res += str.split(" ",num);
+    newRes = res.replace(symbol," ");
+    console.log(newRes);
+}
+Splits("My name is Hung",3);
+
+//tao chuoi GUID ngau nhien 32 ky tu
+function randomsym() {
+    let GUID = "";
+    for(let i = 0; i<= 32;i++){
+        let n = Math.floor(Math.random() * (122));
+        if(n >= 34 && n<=122) {
+        GUID += String.fromCodePoint(n);
+        }
+    }
+    return GUID;
+}
+randomsym();
+
+
+//Viet ham thay the cac ky tu trong chuoi thanh ky tu lien ke trong Unicode
+function replace(str) {
+    let result = "";
+    for(let i = 0;i < str.length;i++){
+        result += String.fromCodePoint(str.charCodeAt(i) + 1);
+    }
+    return result;
+}
+replace("ae");
