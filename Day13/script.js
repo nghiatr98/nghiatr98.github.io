@@ -112,9 +112,7 @@ function randomsym() {
     let GUID = "";
     for(let i = 0; i<= 32;i++){
         let n = Math.floor(Math.random() * (122));
-        if(n >= 34 && n<=122) {
         GUID += String.fromCodePoint(n);
-        }
     }
     return GUID;
 }
@@ -130,3 +128,74 @@ function replace(str) {
     return result;
 }
 replace("ae");
+
+
+
+//arr._concat(arr2) gop phan tu mang arr2 vao arr1 
+let arr2 = [423432,"5r5423r5"]
+arr._concat = function (arr2) {
+    let result = [];
+    for (let i = 0;i < this.length;i++) {
+        result[result.length] = this[i];
+    }
+    for (let i = 0;i < arr2.length; i++) {
+        result[result.length] = arr2[i];
+    }
+    return result;
+}
+arr._concat(arr2);
+
+
+
+
+//arr._push(value) them gia tri vao cuoi mang
+let arr = [1,2];
+arr._push = function (value) {
+    this[this.length] = value;
+    return this;
+}
+arr._push("gfdgd");
+
+
+
+
+//arr._pop() xoa phan tu cuoi mang, dong thoi tra ve gia tri cua phan tu bi xoa
+let arr = [1,2];
+arr._pop = function() {
+    let popedElem = this[this.length - 1];
+    length -= 1;
+    return popedElem;
+}
+arr._pop(1);
+
+
+
+
+
+//arr._indexOf() tim va tra ve index cua phan tu, neu khong co tra ve -1
+let arr = [1,2];
+arr._indexOf = function(value) {
+    let idx = -1 ;
+    for(let i = 0; i < this.length;i++) {
+        if(value == this[i])
+        return i;
+    }
+    return idx;
+}
+arr._indexOf(0);
+
+
+
+//arr._reverse() dao nguoc gia tri mang
+let arr = [1,2,3,4];
+arr._reverse = function () {
+    for(let i = 0,j = this.length - 1;i < j; i++ , j--) {
+        let temp = this[i];
+        this[i] = this[j];
+        this[j] = temp;
+    }
+    return this;
+}
+arr._reverse();
+
+
