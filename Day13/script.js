@@ -199,3 +199,58 @@ arr._reverse = function () {
 arr._reverse();
 
 
+//forEach
+let arr = [1,2,3,4];
+arr._forEach = function () {
+    for(let i = 0;i < arr.length;i++) {
+        console.log(i);
+    }
+}
+arr._forEach();
+
+
+//filter
+let arr = [
+    {name: "Ba",age:26},
+    {name: "Bon",age:5}
+]
+arr._filter = function () {
+let result=[];
+for(let i = 0;i < arr.length;i++) {
+    if(arr[i].age<20){
+        result.push(arr[i])
+    }
+}
+return result;
+}
+arr._filter()
+
+
+
+//map
+let arr = [1,2,3,4,5,6]
+arr._map = function() {
+    let newmap = [];
+    for(let i = 0;i < this.length;i++) {
+        newmap.push(this[i])
+    }
+    return newmap;
+}
+arr._map()
+
+
+
+
+//reduce
+let arr = [
+    {name: "Ba",age:26},
+    {name: "Bon",age:5}
+];
+arr.reduce = function(callback,initial) {
+    let accu = initial;
+    for(let i = 0;i < this.length;i++) {
+        accu = callback(accu,this[i]);
+    }
+    return accu;
+}
+arr.reduce((sum,i) => (sum += i.age),0)
