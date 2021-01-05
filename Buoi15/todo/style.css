@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color:grey ;
+}
+img {
+    width: 30px;
+    height: 30px;
+}
+#doing,#complete,#input {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 460px;
+    margin: 10px auto;
+    border-radius: 20px;
+  }
+  #input {
+    position: relative;
+  }
+  #input input {
+    width: 100%;
+    border: none;
+    height: 20px;
+  }
+  #input input:focus {
+    outline: none;
+  }
+  #add {
+    padding: 0;
+    border: none;
+    width: 30px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+  
