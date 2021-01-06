@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <form action="" name="todo">
+        <input type="text" value="abc" name="username">
+        <a href="https://google.com" onclick="event.preventDefault()">Go</a>
+    </form>
+    <script src="script.js"></script> -->
+    <div class="container">
+        <div class="main-img">
+            <img id="big-img" src="https://i.pinimg.com/736x/b9/9e/40/b99e402b823ce6754ddfd726dc99f6b8.jpg" alt="">
+        </div>
+        <div class="thumb">
+            <div class="list">
+                <div class="list-item">
+                    <img class="thumb-img" src="https://i.pinimg.com/736x/b9/9e/40/b99e402b823ce6754ddfd726dc99f6b8.jpg" alt="">
+                </div>
+                <div class="list-item">
+                    <img class="thumb-img" src="https://i.pinimg.com/originals/08/d2/e1/08d2e14f16b693c9b59dcdddba37d4f6.jpg" alt="">
+                </div>
+                <div class="list-item">
+                    <img class="thumb-img" src="https://img4.thuthuatphanmem.vn/uploads/2020/01/05/hinh-nen-android-full-hd_020633424.jpg" alt="">
+                </div>
+                <div class="list-item">
+                    <img class="thumb-img" src="https://i.pinimg.com/originals/9a/79/2a/9a792a1c10ec2426addb50161a62d40e.jpg" alt="">
+                </div>
+                <div class="list-item">
+                    <img class="thumb-img" src="https://i.pinimg.com/originals/f0/f0/ef/f0f0ef1e2b4c1ef54dfbd017c0cd0c03.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let thumbs = document.querySelectorAll(".thumb-img");
+        let main = document.getElementById("big-img");
+        thumbs.forEach((img) => {
+            img.onclick = function () {
+                main.src = this.src;
+            }
+        });
+    </script>
+</body>
+</html>

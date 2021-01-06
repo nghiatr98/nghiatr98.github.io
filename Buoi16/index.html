@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XO</title>
+    <style>
+
+      table {
+        /* border-collapse: collapse; */
+        margin-bottom: 1rem;
+      }
+
+      tr,
+      td {
+        width: 40px;
+        height: 40px;
+        /* border: 1px solid grey; */
+        border: 1px solid transparent;
+        text-align: center;
+        background-image:  linear-gradient(to left,rgb(69, 176, 238), rgb(24, 80, 233));
+        border-radius: 5px;
+        color: rgb(253, 156, 11);
+      }
+
+      body {
+        background-image: url(https://thietbiketnoi.com/wp-content/uploads/2020/01/tong-hop-hinh-nen-background-vector-designer-dep-do-phan-giai-fhd-2k-4k-moi-nhat-1.jpg) ;
+        background-size: cover;
+      }
+      .container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p id="next"></p>
+    <table>
+      <tbody id="board"></tbody>
+    </table>
+    <button id="reset" hidden>Re-play</button>
+    </div>
+    
+
+    <script>
+      var n = +prompt("Nhap so duong cheo");
+      var end = false;
+      var count = 0;
+      var turn = "X";
+      next.textContent = "Player: " + turn;
+
+      var click = function (e) {
+        if (!end) {
+          e.currentTarget.textContent = turn;
+
+          let rowIndex = this.parentElement.rowIndex;
+              cellIndex = this.cellIndex;
+
+          if (horizonal(turn,rowIndex,cellIndex) || vertical(turn,rowIndex,cellIndex) || diagonal1(turn,rowIndex,cellIndex) || diagonal2(turn,rowIndex,cellIndex)) {
+            end = !end;
+            next.textContent = "Winner: " + turn;
+            reset.hidden = false;
+            return;
+          }
+          count++;
+          turn = turn == "X" ? "O" : "X";
+          next.textContent = "Player: " + turn;
+        }
+
+        if (count >= n*n) {
+          end = !end;
+          next.textContent = "All loser 🤣";
+          reset.hidden = false;
+        }
+      };
+
+      function createRow() {
+        var tr = document.createElement("tr");
+
+        for (var i = 0; i < n; i++) {
+          var td = document.createElement("td");
+          td.addEventListener("click", click, { once: true });
+          tr.append(td);
+        }
+
+        return tr;
+      }
+
+      function createBoard() {
+        var fr = new DocumentFragment();
+
+        for (var i = 0; i < n; i++) {
+          fr.append(createRow());
+        }
+
+        return fr;
+      }
+
+      board.append(createBoard());
+
+      // function horizonal(turn,rowIndex,cellIndex) {
+        // for (var i = 0; i < 3; i++) {
+        //   if (
+        //     board.rows[i].cells[0].textContent == turn &&
+        //     board.rows[i].cells[1].textContent == turn &&
+        //     board.rows[i].cells[2].textContent == turn
+        //   ) {
+        //     return true;
+        //   }
+        // }
+      //   return false;
+      // }
+      function horizonal(turn,rowIndex,cellIndex) {
+        let countHorizonal = 1;
+        for(let i = cellIndex -1; i>=0;i--){
+          if(board.rows[rowIndex].cells[i].textContent == turn){
+            countHorizonal++;
+            if(countHorizonal == 5) return true
+          } else break;
+        }
+        for(let i = cellIndex +1; i< n;i++){
+          if(board.rows[rowIndex].cells[i].textContent == turn){
+            countHorizonal++;
+            if(countHorizonal == 5) return true
+          } else break;
+        }
+        return false;
+      }
+
+      // function vertical() {
+      //   for (var i = 0; i < 3; i++) {
+      //     if (
+      //       board.rows[0].cells[i].textContent == turn &&
+      //       board.rows[1].cells[i].textContent == turn &&
+      //       board.rows[2].cells[i].textContent == turn
+      //     ) {
+      //       return true;
+      //     }
+      //   }
+
+      //   return false;
+      // }
+
+      function vertical(turn,rowIndex,cellIndex) {
+        let countVertical = 1;
+        for(let i = rowIndex -1; i>=0;i--){
+          if(board.rows[i].cells[cellIndex].textContent == turn){
+            countVertical++;
+            if(countVertical == 5) return true
+          } else break;
+        }
+        for(let i = rowIndex +1; i<n;i++){
+          if(board.rows[i].cells[cellIndex].textContent == turn){
+            countVertical++;
+            if(countVertical == 5) return true
+          } else break;
+        }
+        return false;
+      }
+
+      // function diagonal() {
+      //   if (
+      //     board.rows[0].cells[0].textContent == turn &&
+      //     board.rows[1].cells[1].textContent == turn &&
+      //     board.rows[2].cells[2].textContent == turn
+      //   ) {
+      //     return true;
+      //   }
+
+      //   if (
+      //     board.rows[0].cells[2].textContent == turn &&
+      //     board.rows[1].cells[1].textContent == turn &&
+      //     board.rows[2].cells[0].textContent == turn
+      //   ) {
+      //     return true;
+      //   }
+
+      //   return false;
+      // }
+
+      function diagonal1(turn,rowIndex,cellIndex) {
+        let countDiagonal = 1;
+        //check tren
+        for(let i = rowIndex -1, j = cellIndex -1; i>=0 && j>=0;i--,j--){
+          if(board.rows[i].cells[j].textContent == turn){
+            countDiagonal++;
+            if(countDiagonal == 5) return true
+          } else break;
+        }
+        //check duoi
+        for(let i = rowIndex +1, j = cellIndex +1; i<n && j<n;i++,j++){
+          if(board.rows[i].cells[j].textContent == turn){
+            countDiagonal++;
+            if(countDiagonal == 5) return true
+          } else break;
+        }
+        return false;
+      }
+
+      function diagonal2(turn,rowIndex,cellIndex) {
+        let countDiagonal = 1;
+        //check tren
+        for(let i = rowIndex -1, j = cellIndex +1; i>=0 && j<n;i--,j++){
+          if(board.rows[i].cells[j].textContent == turn){
+            countDiagonal++;
+            if(countDiagonal == 5) return true
+          } else break;
+        }
+        //check duoi
+        for(let i = rowIndex +1, j = cellIndex -1; i<n && j>=0;i++,j--){
+          if(board.rows[i].cells[j].textContent == turn){
+            countDiagonal++;
+            if(countDiagonal == 5) return true
+          } else break;
+        }
+        return false;
+      }
+
+        reset.addEventListener("click", function () {
+        board.innerHTML = "";
+        board.append(createBoard());
+        end = !end;
+        count = 0;
+        turn = "X";
+        next.textContent = "Player: " + turn;
+        this.hidden = true;
+      });
+    </script>
+  </body>
+</html>
