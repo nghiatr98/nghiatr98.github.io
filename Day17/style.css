@@ -225,8 +225,9 @@ header {
     opacity: 0;
     visibility: hidden;
 }
-.li-dropDown-item{
-    margin: 20px 10px;
+.sub-dropDown-item{
+    margin: 15px;
+    border-bottom: 1px solid black;
 }
 .dropDownShow{
     opacity: 1;
@@ -283,13 +284,13 @@ body {
   }
    /* Caption text */
   .caption {
-    font-size: 30px;
+    font-size: 25px;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
     width: 100%;
     text-align: center;
-    color: rgb(241, 70, 70);
+    color: rgba(0, 0, 0, 0.767);
   }
   
   /* Fading animation */
