@@ -14,7 +14,7 @@
             cursor: pointer;
         }
         .alert {
-            width: 10rem;
+            width: 20rem;
             position: fixed;
             top: 0rem;
             right: 1rem;
@@ -23,7 +23,7 @@
             position: relative;
             top: 0.5rem;
             right: 0.5rem;
-            font-size: 2rem;
+            font-size: 1.5rem;
             border: 2px solid royalblue;
             border-radius: 2rem;
             padding: 0.5rem;
@@ -44,10 +44,16 @@
     <script>
     let button = document.querySelector('.button')
     alert = document.querySelector('.alert');
+    var sound = function () {
+        let audio = new Audio();
+        audio.src = "Teemo.mp3";
+        audio.play();
+    };
     button.onclick = function() {
     let text = document.createElement("span")
-    text.innerHTML = "A hi hi";
+    text.innerHTML = "Captain Teemo On Duty";
     alert.append(text);
+    sound()
     let time = setInterval(function() {
         alert.removeChild(text)
     },2000)
