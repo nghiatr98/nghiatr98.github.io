@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .col-1 {
+            width: 8.33%;
+        }
+        .col-12 {
+            width: 100%;
+        }
+        @media (min-width: 576px) {
+            .col-sm-1 {
+                width: 8.33% !important;
+            }
+        }
+        @media (min-width: 768px) {
+            .col-md-6 {
+                width: 50%;
+            }
+        }
+        @media (min-width: 992px) {
+            .col-lg-3 {
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus atque ea unde, tenetur ex facere necessitatibus autem excepturi dolor, error expedita voluptatum non sit fugit maiores fugiat illo temporibus sapiente.</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus atque ea unde, tenetur ex facere necessitatibus autem excepturi dolor, error expedita voluptatum non sit fugit maiores fugiat illo temporibus sapiente.</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus atque ea unde, tenetur ex facere necessitatibus autem excepturi dolor, error expedita voluptatum non sit fugit maiores fugiat illo temporibus sapiente.</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus atque ea unde, tenetur ex facere necessitatibus autem excepturi dolor, error expedita voluptatum non sit fugit maiores fugiat illo temporibus sapiente.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

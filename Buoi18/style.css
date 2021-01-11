@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 15px;
+}
+div.col {
+    width: 100%;
+    padding: 15px;
+}
+@media (min-width: 768px) {
+    
+}
